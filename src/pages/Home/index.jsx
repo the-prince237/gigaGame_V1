@@ -39,6 +39,7 @@ const HomeLeftSide = styled.div`
 
 const HomeRightSide = styled.div`
   width: 55%;
+  min-width: 350px;
   margin-left: 20px;
   margin-right: 20px;
   display: flex;

@@ -76,6 +76,7 @@ const OpenedCartWrapper = styled.div`
             background-color: #bd2727;
             border-radius: 5px;
             margin-left: 10px;
+            cursor: pointer;
           }
         }
       }
@@ -97,9 +98,38 @@ const ClosedCartWrapper = styled.div`
   font-weight: bold;
 `
 
+const ResetCartButton = styled.div`
+  background-color: #bd3737;
+  margin-top: 15px;
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  &:hover{
+    transform: scale(1.05);
+  }
+`
+
+const StyledCommandButtom = styled.div`
+border: solid #279927 2px;
+color: #279927;
+margin-top: 15px;
+padding: 3px;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+border-radius: 4px;
+&:hover{
+  color: white;
+  background-color: #279927;
+  transform: scale(1.05);
+}
+`
+
 function Cart() {
   const [cartIsOpen, setCartIsOpen] = useState(false);
-  const {cart, removeFromCart} = useContext(CartContext);
+  const {cart, removeFromCart, resetCart} = useContext(CartContext);
   const cartTotalWeight = cart.reduce((acc, item) => 
     acc += item.weight, 0
   );
@@ -128,6 +158,8 @@ function Cart() {
               )}
             </div>
             <div className='cart-total'>TOTAL : {cartTotalWeight}({cartTotalWeight*150}Fcfa)</div>
+            <StyledCommandButtom>COMMANDER</StyledCommandButtom>
+            <ResetCartButton onClick={() => resetCart()}>vider le panier</ResetCartButton>
           </div>
           )
           }

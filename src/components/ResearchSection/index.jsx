@@ -7,17 +7,20 @@ const StyledResearch = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   &>.research-section{
     display: flex;
-    width: 50%;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 20px;
+    width: 50%;
+    min-width: 250px;
+    flex-wrap: wrap;
+    padding: 10px;
     &>form{
       margin-right: 30px;
       display: flex;
-      width: 50%;
-      justify-content: center;
+      width: 65%;
+      justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
       &>input{
@@ -33,6 +36,7 @@ const StyledResearch = styled.div`
         &[type='submit']{
           border-radius:  0 10px 10px 0;
           height: 43px;
+          width: 50px;
         }
       }
     }

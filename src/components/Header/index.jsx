@@ -16,26 +16,27 @@ const HeaderWrapper = styled.div`
 
 const FullLogo = styled(Link)`
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   font-weight: bold;
+  width: 25%;
+  max-width: 150px;
+  flex-wrap: wrap;
   &>img{
-    width: 70px;
-    margin-right: 15px;
+    width: 45%;
   }
 `
 
 const HeaderNavigator = styled.nav`
-  &>.header-link{
-    margin-left: 50px;
-    
-  }
+  display: flex;
+  flex-wrap: wrap;
 `
 
 const StyledLink = styled(Link)`
+  margin: 0 15px 0 15px;
   ${({isoponed}) => isoponed === 'yes' ?
     `
-    background-color: #bd2727;
-    padding: 30px;
+    color: #bd2727;
     font-weight: bold;
     border-radius: 50%;
     `:
@@ -51,7 +52,7 @@ function Header() {
   return(
     <HeaderWrapper>
 
-      <FullLogo to='/'> <img src={fullLogo} alt='giga game'/> gigagame</FullLogo>
+      <FullLogo to='/'> <img src={fullLogo} alt='giga game'/> <p>gigagame</p> </FullLogo>
       <HeaderNavigator>
         <StyledLink className='header-link' to='/' isoponed={currentPage === 'accueil' ? 'yes' : 'no'} onClick={() => setCurrentPage('accueil')}>accueil</StyledLink>
         <StyledLink className='header-link' to='/games' isoponed={currentPage === 'games' ? 'yes' : 'no'} onClick={() => setCurrentPage('games')}>jeux</StyledLink>

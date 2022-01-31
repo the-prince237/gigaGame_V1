@@ -21,6 +21,7 @@ const ConnexionPart = styled.div`
 
 const ConnexionMessage = styled.div`
   width: 35%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
