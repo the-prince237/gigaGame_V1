@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/gigaGame_V1/static/js/main.bb5cc724.chunk.js",
+    "main.js.map": "/gigaGame_V1/static/js/main.bb5cc724.chunk.js.map",
+    "runtime-main.js": "/gigaGame_V1/static/js/runtime-main.740400f5.js",
+    "runtime-main.js.map": "/gigaGame_V1/static/js/runtime-main.740400f5.js.map",
+    "static/js/2.12a73167.chunk.js": "/gigaGame_V1/static/js/2.12a73167.chunk.js",
+    "static/js/2.12a73167.chunk.js.map": "/gigaGame_V1/static/js/2.12a73167.chunk.js.map",
+    "index.html": "/gigaGame_V1/index.html",
+    "static/js/2.12a73167.chunk.js.LICENSE.txt": "/gigaGame_V1/static/js/2.12a73167.chunk.js.LICENSE.txt",
+    "static/media/emptyCartWarning.e52f5946.png": "/gigaGame_V1/static/media/emptyCartWarning.e52f5946.png",
+    "static/media/google-icon.5d074433.png": "/gigaGame_V1/static/media/google-icon.5d074433.png",
+    "static/media/home-games.1fceb930.png": "/gigaGame_V1/static/media/home-games.1fceb930.png",
+    "static/media/jeux1.fa8dc24f.jpg": "/gigaGame_V1/static/media/jeux1.fa8dc24f.jpg",
+    "static/media/jeux2.f13fd287.jpg": "/gigaGame_V1/static/media/jeux2.f13fd287.jpg",
+    "static/media/jeux3.7ca46bb5.jpg": "/gigaGame_V1/static/media/jeux3.7ca46bb5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.740400f5.js",
+    "static/js/2.12a73167.chunk.js",
+    "static/js/main.bb5cc724.chunk.js"
+  ]
+}
